@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="XLPlayLiveViewContorller">
+            <connections>
+                <outlet property="beautiful" destination="xqL-qM-FNE" id="MtK-Eu-zDq"/>
+                <outlet property="livingBtn" destination="Yx7-hq-Caw" id="vkb-HD-kgt"/>
+                <outlet property="statusLabel" destination="oCV-ys-AB2" id="Afv-YN-cqf"/>
+                <outlet property="view" destination="8bs-Et-kZo" id="LlG-eE-NZl"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="8bs-Et-kZo">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xqL-qM-FNE">
+                    <rect key="frame" x="20" y="30" width="170" height="30"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.15367353719999999" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="RkF-DZ-caK"/>
+                        <constraint firstAttribute="width" constant="170" id="Rw2-e1-s2g"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <inset key="contentEdgeInsets" minX="5" minY="5" maxX="5" maxY="5"/>
+                    <inset key="titleEdgeInsets" minX="2" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <state key="normal" title="智能美颜已经开启" image="icon_beautifulface_19x19"/>
+                    <state key="selected" title="智能美颜已经关闭"/>
+                    <connections>
+                        <action selector="beautifulBtn:" destination="-1" eventType="touchUpInside" id="JQr-Pd-k5a"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iet-Gw-JMG">
+                    <rect key="frame" x="540" y="25" width="40" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="40" id="lES-rk-3MQ"/>
+                        <constraint firstAttribute="height" constant="40" id="mBV-FB-cP3"/>
+                    </constraints>
+                    <state key="normal" image="talk_close_40x40"/>
+                    <connections>
+                        <action selector="close" destination="-1" eventType="touchUpInside" id="Kbx-Wj-KK2"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WjC-vU-hxT">
+                    <rect key="frame" x="480" y="25" width="40" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="emc-mc-kSR"/>
+                        <constraint firstAttribute="width" constant="40" id="z30-81-w27"/>
+                    </constraints>
+                    <state key="normal" image="camera_change_40x40"/>
+                    <connections>
+                        <action selector="switchBtn:" destination="-1" eventType="touchUpInside" id="xNE-MO-mSd"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yx7-hq-Caw">
+                    <rect key="frame" x="40" y="500" width="520" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="Wlm-NS-sQS"/>
+                    </constraints>
+                    <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <state key="normal" title="开始直播">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <state key="selected" title="结束直播">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="beginLive" destination="-1" eventType="touchUpInside" id="y7I-iG-tuL"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="状态: 未知" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oCV-ys-AB2">
+                    <rect key="frame" x="261" y="90" width="78" height="21"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.15367353719999999" colorSpace="calibratedWhite"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="iet-Gw-JMG" firstAttribute="leading" secondItem="WjC-vU-hxT" secondAttribute="trailing" constant="20" id="4cd-z8-UTo"/>
+                <constraint firstAttribute="bottom" secondItem="Yx7-hq-Caw" secondAttribute="bottom" constant="60" id="5YP-ir-YtU"/>
+                <constraint firstItem="oCV-ys-AB2" firstAttribute="top" secondItem="xqL-qM-FNE" secondAttribute="bottom" constant="30" id="Lu4-67-tkl"/>
+                <constraint firstAttribute="trailing" secondItem="iet-Gw-JMG" secondAttribute="trailing" constant="20" id="MbV-Cw-WW6"/>
+                <constraint firstItem="WjC-vU-hxT" firstAttribute="centerY" secondItem="iet-Gw-JMG" secondAttribute="centerY" id="NIi-tI-Br3"/>
+                <constraint firstItem="xqL-qM-FNE" firstAttribute="leading" secondItem="8bs-Et-kZo" secondAttribute="leading" constant="20" id="SII-J7-PQ3"/>
+                <constraint firstAttribute="trailing" secondItem="Yx7-hq-Caw" secondAttribute="trailing" constant="40" id="TZc-Et-gVP"/>
+                <constraint firstItem="iet-Gw-JMG" firstAttribute="centerY" secondItem="xqL-qM-FNE" secondAttribute="centerY" id="cL5-tW-cIe"/>
+                <constraint firstItem="xqL-qM-FNE" firstAttribute="top" secondItem="8bs-Et-kZo" secondAttribute="top" constant="30" id="lqj-d6-wJ9"/>
+                <constraint firstItem="Yx7-hq-Caw" firstAttribute="leading" secondItem="8bs-Et-kZo" secondAttribute="leading" constant="40" id="slG-7A-c6k"/>
+                <constraint firstItem="oCV-ys-AB2" firstAttribute="centerX" secondItem="8bs-Et-kZo" secondAttribute="centerX" id="xB6-7c-iwA"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="camera_change_40x40" width="40" height="40"/>
+        <image name="icon_beautifulface_19x19" width="19" height="19"/>
+        <image name="talk_close_40x40" width="40" height="40"/>
+    </resources>
+</document>

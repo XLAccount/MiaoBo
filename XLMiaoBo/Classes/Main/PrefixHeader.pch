@@ -1,0 +1,43 @@
+//
+//  PrefixHeader.pch
+//  XLMiaoBo
+//
+//  Created by XuLi on 16/8/30.
+//  Copyright © 2016年 XuLi. All rights reserved.
+//
+
+#ifdef __OBJC__
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#define XLColor(r, g, b) [UIColor colorWithRed:r/255.0 green:g/255.0 blue:b/255.0 alpha:1]
+#define XLBasicColor XLColor(214, 41, 117)
+
+#define XLScreenW [UIScreen mainScreen].bounds.size.width
+#define XLScreenH [UIScreen mainScreen].bounds.size.height
+
+/** 关注的数据 */
+#define XLCare @"XLCare"
+#define XLCareAllModels @"XLCareAllModels"
+
+#define UmengAppkey @"53290df956240b6b4a0084b3"
+
+#import <IJKMediaFramework/IJKMediaFramework.h> //请看 README.md
+#import "UIButton+Extension.h"
+#import "UIView+Extension.h"
+#import "Masonry.h"
+#import "MBProgressHUD+MJ.h"
+#import "MJExtension.h"
+#import "MJRefresh.h"
+#import "SDWebImageDownloader.h"
+#import "UIImageView+WebCache.h"
+#import "UIImage+Extension.h"
+
+
+#endif
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* PrefixHeader_pch */

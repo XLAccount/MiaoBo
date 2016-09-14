@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="tBR-gr-zUv" customClass="XLCoverView">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="no_follow_250x247" translatesAutoresizingMaskIntoConstraints="NO" id="DHH-tb-JgR">
+                    <rect key="frame" x="175" y="117" width="250" height="247"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="你还未关注主播，点击头像关注" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zUc-bB-csT">
+                    <rect key="frame" x="0.0" y="394" width="600" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="7aG-qu-tFV"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xl4-7g-oj0">
+                    <rect key="frame" x="40" y="445" width="520" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="SY3-QI-hav"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="black" pointSize="15"/>
+                    <state key="normal" title="去看看当前那热门直播"/>
+                    <connections>
+                        <action selector="goToHot" destination="tBR-gr-zUv" eventType="touchUpInside" id="OKF-kq-R2I"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="DHH-tb-JgR" firstAttribute="centerX" secondItem="tBR-gr-zUv" secondAttribute="centerX" id="6jK-UI-lf2"/>
+                <constraint firstAttribute="trailing" secondItem="Xl4-7g-oj0" secondAttribute="trailing" constant="40" id="8fr-WA-9qH"/>
+                <constraint firstItem="zUc-bB-csT" firstAttribute="leading" secondItem="tBR-gr-zUv" secondAttribute="leading" id="Spu-6i-hSk"/>
+                <constraint firstItem="Xl4-7g-oj0" firstAttribute="top" secondItem="zUc-bB-csT" secondAttribute="bottom" constant="30" id="Vli-Mr-TXY"/>
+                <constraint firstAttribute="trailing" secondItem="zUc-bB-csT" secondAttribute="trailing" id="aHc-HG-Qg0"/>
+                <constraint firstAttribute="bottom" secondItem="Xl4-7g-oj0" secondAttribute="bottom" constant="115" id="b1n-yn-47L"/>
+                <constraint firstItem="Xl4-7g-oj0" firstAttribute="leading" secondItem="tBR-gr-zUv" secondAttribute="leading" constant="40" id="cpz-UW-5hX"/>
+                <constraint firstItem="DHH-tb-JgR" firstAttribute="centerY" secondItem="tBR-gr-zUv" secondAttribute="centerY" constant="-60" id="xOH-h8-7Qs"/>
+                <constraint firstItem="zUc-bB-csT" firstAttribute="top" secondItem="DHH-tb-JgR" secondAttribute="bottom" constant="30" id="ztl-ef-k4u"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="no_follow_250x247" width="320" height="316"/>
+    </resources>
+</document>
