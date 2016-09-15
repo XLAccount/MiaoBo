@@ -75,7 +75,7 @@
 {
     if (_thirdView == nil){
     
-        XLThirdLoginView *thirdView = [[XLThirdLoginView alloc] init];
+        XLThirdLoginView *thirdView = [[XLThirdLoginView alloc] initWithFrame:CGRectMake(0, 0, XLScreenW, 60)];
         
          __weak typeof(self) weakSelf = self;
         [thirdView setSelectedBlock:^(XLType type) {
