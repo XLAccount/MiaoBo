@@ -6,7 +6,7 @@ Github下载地址：https://github.com/XLAccount/MiaoBo
 
 项目详解地址：http://www.code4app.com/blog-843201-350.html  
 
-快速集成RTMP的视频推流教程：http://www.code4app.com/blog-843201-315.html 
+快速集成RTMP的视频推流教程：http://www.cnblogs.com/XLAccount/p/5886731.html 
 
 ffmpeg常用命令操作：http://www.code4app.com/blog-843201-326.html 
 
