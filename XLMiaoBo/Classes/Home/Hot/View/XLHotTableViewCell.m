@@ -33,7 +33,7 @@
 
 + (instancetype)tableViewCell
 {
-    return [[[NSBundle mainBundle] loadNibNamed:@"XLHotTableViewCell" owner:nil options:nil] lastObject];
+       return [[[NSBundle mainBundle] loadNibNamed:@"XLHotTableViewCell" owner:nil options:nil] firstObject];
 }
 
 - (void)awakeFromNib {
