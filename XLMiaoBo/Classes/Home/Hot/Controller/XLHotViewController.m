@@ -14,6 +14,7 @@
 #import "XLHotModel.h"
 #import "XLHotHeaderModel.h"
 #import "XLWatchLiveViewController.h"
+#import "XLCrownRankViewController.h"
 
 @interface XLHotViewController ()<UITableViewDelegate,UITableViewDataSource>
 /** 当前页 */
@@ -78,6 +79,22 @@ static NSString *reuseIdentifier = @"cell";
     if (_headerView == nil){
     
         XLHotHeaderView *headerView = [[XLHotHeaderView alloc] initWithFrame:CGRectMake(0, 0, XLScreenW, 100)];
+        
+        
+        [headerView setImageClickBlock:^(XLHotHeaderModel *headerModel) {
+            
+            XLCrownRankViewController *web = [[XLCrownRankViewController alloc] init];
+            
+            if (headerModel.link.length){
+                
+                web.title = headerModel.title;
+                web.urlStr = headerModel.link;
+                
+                [self.navigationController pushViewController:web animated:YES];
+                
+            }
+        }];
+
         
         _tableView.tableHeaderView = headerView;
         
@@ -236,11 +253,8 @@ static NSString *reuseIdentifier = @"cell";
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
  
-    
     XLHotTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:reuseIdentifier];
     
-    
-        
         XLHotModel *hotModel = self.allModels[indexPath.item];
     
             
@@ -274,6 +288,7 @@ static NSString *reuseIdentifier = @"cell";
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
+  
     XLWatchLiveViewController *watch = [[XLWatchLiveViewController alloc] init];
     
     XLHotModel *hotModel = self.allModels[indexPath.item];
