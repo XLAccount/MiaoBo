@@ -39,7 +39,7 @@
     
     [UMSocialData setAppKey:UmengAppkey];
     
-    [UMSocialSinaSSOHandler openNewSinaSSOWithAppKey:@"978290066" secret:@"ILOVEYOU" RedirectURL:nil];
+    [UMSocialSinaSSOHandler openNewSinaSSOWithAppKey:@"2039393085" secret:@"7da7d4501f3f51a14040e1fa5eca7723" RedirectURL:@"http://www.code4app.com/space-uid-843201.html"];
     
     [UMSocialWechatHandler setWXAppId:@"wxe6b5b748cdcff60f" appSecret:@"d4624c36b6795d1d99dcf0547af5443d" url:@"http://www.umeng.com/social"];
     
