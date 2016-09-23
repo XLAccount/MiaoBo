@@ -9,33 +9,6 @@ Github下载地址：https://github.com/XLAccount/MiaoBo
 快速集成RTMP的视频推流教程：http://www.cnblogs.com/XLAccount/p/5886731.html 
 
 ffmpeg常用命令操作：http://www.code4app.com/blog-843201-326.html
-<pre>dfdndjd
-
-@property (weak, nonatomic) IBOutlet UIButton *livingBtn;
-@property (weak, nonatomic) IBOutlet UILabel *statusLabel;
-- (IBAction)beautifulBtn:(UIButton *)sender;
-- (IBAction)switchBtn:(UIButton *)sender;
-- (IBAction)close;
-- (IBAction)beginLive;
-/** RTMP地址 */
-@property (nonatomic, copy) NSString *rtmpUrl;
-@property (nonatomic, strong) LFLiveSession *session;
-@property (nonatomic, weak) UIView *livingPreView;
-
-@end
-
-@implementation XLPlayLiveViewContorller
-
-- (UIView *)livingPreView
-{
-    if (_livingPreView == nil) {
-        UIView *livingPreView = [[UIView alloc] initWithFrame:self.view.bounds];
-        livingPreView.backgroundColor = [UIColor clearColor];
-        
-        livingPreView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
-        
-        [self.view insertSubview:livingPreView atIndex:0];
-        _livingPr</pre>
 
 #关于IJKMediaFramework/IJKMediaFramework.h找不到的问题,下载后直接拉到项目中即可
 下载地址：https://pan.baidu.com/s/1boPOomN 密码:：9yd8
