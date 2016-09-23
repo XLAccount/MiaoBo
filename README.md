@@ -13,7 +13,7 @@ ffmpeg常用命令操作：http://www.code4app.com/blog-843201-326.html
 #关于IJKMediaFramework/IJKMediaFramework.h找不到的问题,下载后直接拉到项目中即可
 下载地址：https://pan.baidu.com/s/1boPOomN 密码:：9yd8
 
-<font color=#0099ff size=7 face="黑体">#BUG修复：</font>
+#BUG修复：
          
          解决登录程序偶尔崩溃,修复轮播图片和页面控制器叠加等问题，修复新浪授权登录  (2016.9.7)
          
