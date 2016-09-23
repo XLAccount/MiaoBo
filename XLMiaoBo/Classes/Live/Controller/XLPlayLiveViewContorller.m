@@ -33,7 +33,7 @@
     if (_livingPreView == nil) {
         UIView *livingPreView = [[UIView alloc] initWithFrame:self.view.bounds];
         livingPreView.backgroundColor = [UIColor clearColor];
-        livingPreView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
+        //livingPreView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
         [self.view insertSubview:livingPreView atIndex:0];
         _livingPreView = livingPreView;
     }
@@ -109,11 +109,18 @@
 
 - (IBAction)switchBtn:(UIButton *)sender {
     
-    if (![self beginClick]) return;
+     if (![self beginClick]) return;
     
     sender.selected = !sender.selected;
-    // 默认是开启了美颜功能的
-    self.session.beautyFace = !self.session.beautyFace;
+    
+    if (sender.selected){
+    
+    self.session.captureDevicePosition = AVCaptureDevicePositionBack;
+    }else{
+        
+        self.session.captureDevicePosition = AVCaptureDevicePositionFront;
+    }
+
 }
 
 
